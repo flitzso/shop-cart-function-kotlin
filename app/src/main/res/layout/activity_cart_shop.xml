@@ -17,34 +17,77 @@
         android:id="@+id/priceTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Preço: R$ 99.99" />
+        android:layout_marginTop="-20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text=" Preço: R$ 99.99 \n Frete: 0,00 \n Total: R$ 99.99" />
+
+    <!--Excluir-Salvar-Alterar-Comprar Agora-->
+    <!-- Os botoes a baixo serão setados no .kt com as functions -->
+    <TextView
+        android:id="@+id/btnExcluir"
+        android:text="Excluir"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/btnSalvar"
+        android:text="Salvar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="-27dp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/btnAlterar"
+        android:text="Alterar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="-27dp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/btnComprarAgora"
+        android:text="Comprar Agora"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="-27dp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <!-- 1 stage -->
 
     <EditText
         android:id="@+id/cepEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:hint="Digite o CEP"
         android:inputType="number" />
 
-    <Button
-        android:id="@+id/calculateShippingButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calcular Frete" />
-
     <!-- Adicione controles para selecionar cor, tamanho e quantidade aqui -->
 
-    <Button
-        android:id="@+id/buyButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Comprar Agora" />
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/icVoltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_voltar"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_button_blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="75dp"
         android:text="Continuar Comprando"
         />
 
